@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <header class="p-4 bg-gray-100 dark:text-gray-800">
+        <div class="container flex justify-between h-16 mx-auto md:justify-center md:space-x-8">
+            <ul class="items-stretch hidden space-x-3 md:flex">
+                <li class="flex">
+                    <a onclick="link(this)" rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 ">Europe</a>
+                </li>
+                <li class="flex">
+                    <a onclick="link(this)" rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 ">Asia</a>
+                </li>
+                <li class="flex">
+                    <a onclick="link(this)" rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 ">Americas</a>
+                </li>
+            </ul>
+            <a  rel="noopener noreferrer" href="./index.htm" aria-label="Back to homepage" class="flex items-center p-2">
+                <i class="fa-solid fa-earth-americas text-violet-700 text-4xl border-b-2 border-violet-500 px-4 mt-5"></i>
+            </a>
+            <ul class="items-stretch hidden space-x-3 md:flex">
+                <li class="flex">
+                    <a onclick="link(this)" rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 dark:border-">Africa</a>
+                </li>
+                <li class="flex">
+                    <a onclick="link(this)" rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 dark:border-">Oceania</a>
+                </li>
+                <li class="flex">
+                    <a onclick="link(this)" rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 dark:border-">Antarctic</a>
+                </li>
+            </ul>
+            <button onclick="burger(true)" title="Button" type="button" class="p-4 md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-gray-800">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div id="menuBurger" class="fixed inset-y-0 right-[-100%] z-[99999] w-full overflow-y-auto bg-gray-100 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between ">
+                    <button onclick="burger(false)" type="button" class="-m-2.5 btnX rounded-md p-2.5 text-gray-700">
+                      <span class="sr-only">Close menu</span>
+                      <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                  <ul class="items-center justify-between flex flex-col gap-5 space-x-3 ">
+                    <li class="flex">
+                        <a onclick="link(this)" rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 bg-violet-600 ">Europe</a>
+                    </li>
+                    <li class="flex">
+                        <a onclick="link(this)" rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 bg-violet-600 ">Asia</a>
+                    </li>
+                    <li class="flex">
+                        <a onclick="link(this)" rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 bg-violet-600 ">Americas</a>
+                    </li>
+                    <li class="flex">
+                        <a onclick="link(this)" rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 bg-violet-600">Africa</a>
+                    </li>
+                    <li class="flex">
+                        <a onclick="link(this)" rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 bg-violet-600">Oceania</a>
+                    </li>
+                    <li class="flex">
+                        <a onclick="link(this)" rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 bg-violet-600">Antarctic</a>
+                    </li>
+    
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <main id="main1" class="bg-[#E5E7EB]  py-10 min-h-[100vh] scroll-smooth section1 ">
+        <div id="demo" class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4 container m-auto"></div>
+        <div id="demo2">
+          <div id="title" class="container m-auto ">
+                <div class="title flex flex-col justify-center items-center gap-[40px] h-[40vh]">
+                    <h1 class="inline text-3xl font-bold tracking-tigh text-black sm:block sm:text-5xl ">Welcome to CountryApp Website</h1>
+                    <p class="inline text-2xl font-bold tracking-tight text-violet-500 sm:block lg:text-4xl ">You can find data of any country in this website.</p>
+                </div>
+                <div id="search" class=" !text-center">
+                    <fieldset   class="w-full space-y-1 dark:text-gray-800 ">
+                        <label for="Search" class="hidden">Search</label>
+                        <div id="inputSearc" class="relative text-center hidden">
+                            <span class="absolute inset-y-0 left-[40%] flex items-center justify-center  pl-2">
+                                <button type="button" title="search" class="p-1 focus:outline-none focus:ring text-center">
+                                    <svg fill="currentColor" viewBox="0 0 512 512" class="w-4 h-4 dark:text-gray-800">
+                                        <path d="M479.6,399.716l-81.084-81.084-62.368-25.767A175.014,175.014,0,0,0,368,192c0-97.047-78.953-176-176-176S16,94.953,16,192,94.953,368,192,368a175.034,175.034,0,0,0,101.619-32.377l25.7,62.2L400.4,478.911a56,56,0,1,0,79.2-79.195ZM48,192c0-79.4,64.6-144,144-144s144,64.6,144,144S271.4,336,192,336,48,271.4,48,192ZM456.971,456.284a24.028,24.028,0,0,1-33.942,0l-76.572-76.572-23.894-57.835L380.4,345.771l76.573,76.572A24.028,24.028,0,0,1,456.971,456.284Z"></path>
+                                    </svg>
+                                </button>
+                            </span>
+                            <input oninput="srcc()" id="input"  type="search" name="Search" placeholder="Search..." class="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none dark:bg-gray-100 dark:text-gray-800 focus:dark:bg-gray-50 focus:dark:border-violet-600 ">
+                        </div>
+                    </fieldset>
+                </div>
+                
+                <div class="flex items-center justify-center gap-[30px] mt-5">
+                    <button onclick="look()" class="w-[170px] py-[15px] rounded-[5px] border-0 font-bold text-white bg-violet-500 uppercase text-[.9rem] hover:bg-[#6f4cd6] ">HAVE A LOOK</button>
+                    <button onclick="btnSrc()" class="w-[170px] py-[15px] rounded-[5px] border-0 font-bold text-white bg-[#000] uppercase text-[.9rem] hover:bg-[#191919]">SEARCH</button>
+                </div>
+                
+            </div>
+            <!-- section1 -->
+            <section  class="dark:bg-gray-100 dark:text-gray-800 my-10">
+                <div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
+                    <a id="random" rel="noopener noreferrer" href="#" class="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-50 py-6">
+                        
+                    </a>
+                </div>
+            </section>
+            <!-- Section2 -->
+            <section class="py-6 sm:py-12 dark:bg-gray-100 ">
+                <div class="container p-6 mx-auto space-y-8">
+                    <div id="flag" class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+                        
+                    </div>
+                </div>
+            </section>
+            <div class="text-center">
+                <button onclick="add()" type="button"
+                    class="px-8 py-3 font-semibold border rounded border-gray-800 text-gray-800">Show more...</button>
+            </div>
+        </div> 
+    </main>
+    <footer class="px-4 py-8 dark:bg-gray-100 dark:text-gray-600">
+        <div class="container flex flex-wrap items-center justify-center mx-auto space-y-4 sm:justify-between sm:space-y-0">
+            <div class="flex flex-row pr-3 space-x-4 sm:space-x-8">
+                <div class="flex items-center justify-center flex-shrink-0 w-12 h-12 rounded-full dark:bg-violet-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="w-5 h-5 rounded-full dark:text-gray-50">
+                        <path d="M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z"></path>
+                    </svg>
+                </div>
+                <ul class="flex flex-wrap items-center space-x-4 sm:space-x-8">
+                    <li>
+                        <a rel="noopener noreferrer" href="#">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a rel="noopener noreferrer" href="#">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="flex flex-wrap pl-3 space-x-4 sm:space-x-8">
+                <li>
+                    <a rel="noopener noreferrer" href="#">Instagram</a>
+                </li>
+                <li>
+                    <a rel="noopener noreferrer" href="#">Facebook</a>
+                </li>
+                <li>
+                    <a rel="noopener noreferrer" href="#">Twitter</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+   
+
+
+    
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>

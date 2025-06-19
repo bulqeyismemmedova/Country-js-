@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="p-4 dark:bg-gray-100 dark:text-gray-800">
+        <div class="container flex justify-between h-16 mx-auto md:justify-center md:space-x-8">
+            <ul class="items-stretch hidden space-x-3 md:flex">
+                <li class="flex">
+                    <a onclick="link(this)" rel="noopener noreferrer" href="#"
+                        class="flex items-center px-4 -mb-1 border-b-2 ">Europe</a>
+                </li>
+                <li class="flex">
+                    <a onclick="link(this)" rel="noopener noreferrer" href="#"
+                        class="flex items-center px-4 -mb-1 border-b-2 ">Asia</a>
+                </li>
+                <li class="flex">
+                    <a onclick="link(this)" rel="noopener noreferrer" href="#"
+                        class="flex items-center px-4 -mb-1 border-b-2 ">Americas</a>
+                </li>
+            </ul>
+            <a rel="noopener noreferrer" href="./index.htm" aria-label="Back to homepage" class="flex items-center p-2">
+                <i
+                    class="fa-solid fa-earth-americas text-violet-700 text-4xl border-b-2 border-violet-500 px-4 mt-5"></i>
+            </a>
+            <ul class="items-stretch hidden space-x-3 md:flex">
+                <li class="flex">
+                    <a onclick="link(this)" rel="noopener noreferrer" href="#"
+                        class="flex items-center px-4 -mb-1 border-b-2 dark:border-">Africa</a>
+                </li>
+                <li class="flex">
+                    <a onclick="link(this)" rel="noopener noreferrer" href="#"
+                        class="flex items-center px-4 -mb-1 border-b-2 dark:border-">Oceania</a>
+                </li>
+                <li class="flex">
+                    <a onclick="link(this)" rel="noopener noreferrer" href="#"
+                        class="flex items-center px-4 -mb-1 border-b-2 dark:border-">Antarctic</a>
+                </li>
+            </ul>
+            <button title="Button" type="button" class="p-4 md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="w-6 h-6 dark:text-gray-800">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main class="bg-[#E5E7EB] dark:bg-gray-800 py-10 min-h-[100vh] scroll-smooth section1">
+        <div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
+            <a id="detail" rel="noopener noreferrer" href="#"
+                class="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-50 py-6">
+            </a>
+            <div id="demo" class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4 container m-auto"></div>
+        </div>
+    </main>
+    <footer class="px-4 py-8 dark:bg-gray-100 dark:text-gray-600">
+        <div class="container flex flex-wrap items-center justify-center mx-auto space-y-4 sm:justify-between sm:space-y-0">
+            <div class="flex flex-row pr-3 space-x-4 sm:space-x-8">
+                <div class="flex items-center justify-center flex-shrink-0 w-12 h-12 rounded-full dark:bg-violet-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="w-5 h-5 rounded-full dark:text-gray-50">
+                        <path d="M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z"></path>
+                    </svg>
+                </div>
+                <ul class="flex flex-wrap items-center space-x-4 sm:space-x-8">
+                    <li>
+                        <a rel="noopener noreferrer" href="#">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a rel="noopener noreferrer" href="#">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="flex flex-wrap pl-3 space-x-4 sm:space-x-8">
+                <li>
+                    <a rel="noopener noreferrer" href="#">Instagram</a>
+                </li>
+                <li>
+                    <a rel="noopener noreferrer" href="#">Facebook</a>
+                </li>
+                <li>
+                    <a rel="noopener noreferrer" href="#">Twitter</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- <script>
+        let data;
+        fetch("https://raw.githubusercontent.com/TheOksigen/purfect_data/refs/heads/main/country.json")
+            .then(res => res.json())
+            .then(item => {
+                data = item
+                const url = window.location.search
+                const params = new URLSearchParams(url)
+                const obj = params.get("country")
+                const flag = data.find(item => item.topLevelDomain == obj)
+                showFlag(flag)
+            })
+        function showFlag(flag) {
+            // Border
+           const bordersHtml = flag.borders
+                ? flag.borders.map(item =>
+                    `<button onclick="border('${item}')" type="button" class="px-2 py-2 my-3 mx-3 font-semibold border rounded border-gray-800 text-gray-800">${item}</button>`
+                ).join(' ')
+                : "Bu ada ölkəsidir";
+
+            // Flag
+            const detail = document.getElementById("detail")
+            detail.innerHTML = `<img src="${flag.flags.svg}" alt="" class="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500">
+                                    <div class="p-6 space-y-2 lg:col-span-5">
+                                        <h3 class="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">${flag.name}</h3>
+                                        <span class="text-xs dark:text-gray-600">${flag.subregion}</span>
+                                        <p>Capital:${flag.capital}</p>
+                                        <p>Area:${flag.area}</p>
+                                        <p>Poulation:${flag.population}</p>
+                                        <p>Ölkənin qonşuları: <br />
+                                        ${bordersHtml}
+                                    </p>
+                                    </div>`
+        }
+
+        function border(code) {
+        const country = data.find(item => item.alpha3Code === code);
+        showFlag(country)
+        }
+        function link(x){
+   const demo = document.getElementById("demo")
+   const detail = document.getElementById("detail")
+   detail.innerHTML = ''
+   const region = data.filter(item => item.region == x.innerHTML)
+    demo.innerHTML = ''
+    region.forEach(item => demo.innerHTML +=` <article  class="w-[292px] countryCards flex flex-col dark:bg-gray-900 bg-white shadow-md rounded-sm overflow-hidden ">
+    <a onclick="showCard('${item.topLevelDomain}')" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+        <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="${item.flags.svg}">
+    </a>
+    <div class="flex flex-col flex-1 p-6">
+        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">${item.region}</a>
+        <h3  class="flex-1 py-2 text-lg font-semibold leading-snug">${item.name},${item.capital}</h3>
+        <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
+            <span>Population:${item.population}</span>
+            <span>Area:${item.area}</span>
+        </div>
+    </div>
+</article>`)
+    
+}   
+
+
+    
+    
+
+
+    </script> -->
+    <script type="module" src="js/detail.js"></script>
+     
+</body>
+
+</html>
