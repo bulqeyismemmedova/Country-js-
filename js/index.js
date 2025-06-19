@@ -70,7 +70,7 @@ function show(){
         <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="${item.flags.svg}">
     </a>
     <div class="flex flex-col flex-1 p-6">
-        <a rel="noopener noreferrer" href="detail.htm" aria-label="Te nulla oportere reprimique his dolorum">${item.region}</a>
+        <a rel="noopener noreferrer" href="https://country-js-eta.vercel.app/" aria-label="Te nulla oportere reprimique his dolorum">${item.region}</a>
         <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">${item.name},${item.capital}</h3>
         <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
             <span>Population:${item.population}</span>
@@ -91,7 +91,7 @@ function link(x){
    const region = data.filter(item => item.region == x.innerHTML)
     demo.innerHTML = ''
     region.forEach(item => demo.innerHTML +=` <article  class="w-[292px] countryCards flex flex-col dark:bg-gray-900 bg-white shadow-md rounded-sm overflow-hidden ">
-    <a  href="detail.htm?id=${item.topLevelDomain}" aria-label="Te nulla oportere reprimique his dolorum">
+    <a  href="https://country-js-eta.vercel.app/?id=${item.topLevelDomain}" aria-label="Te nulla oportere reprimique his dolorum">
         <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="${item.flags.svg}">
     </a>
     <div class="flex flex-col flex-1 p-6">
