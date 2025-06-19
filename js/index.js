@@ -51,7 +51,7 @@ function randomCard() {
     random.innerHTML = `
     <img src="${item.flags.svg}" alt="" class="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500">
     <div class="p-6 space-y-2 lg:col-span-5">
-        <a href="detail.htm?id=${item.topLevelDomain}" class="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">${item.name}</a>
+        <a href="https://country-js-eta.vercel.app/?id=${item.topLevelDomain}" class="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">${item.name}</a>
         <span class="text-xs dark:text-gray-600">${item.subregion}</span>
         <p>Capital:${item.capital}</p>
         <p>Area:${item.area}</p>
@@ -66,7 +66,7 @@ function show(){
     data
     .slice(0,num)
     .forEach(item => flag.innerHTML += ` <article  class="w-[292px] countryCards flex flex-col  bg-white shadow-md rounded-sm overflow-hidden">
-    <a  href="detail.htm?id=${item.topLevelDomain}" aria-label="Te nulla oportere reprimique his dolorum">
+    <a  href="https://country-js-eta.vercel.app/?id=${item.topLevelDomain}" aria-label="Te nulla oportere reprimique his dolorum">
         <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="${item.flags.svg}">
     </a>
     <div class="flex flex-col flex-1 p-6">
